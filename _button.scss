@@ -1,0 +1,25 @@
+.Button{
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2EBF0;
+    border-radius: 6px;
+    padding: 23px 274px 23px 27px;
+}
+
+.Button img{
+    margin-top: 23px;
+    width: 40px;
+    height: 40px;
+}
+
+.Button p{
+    margin-bottom: 23px;
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #4f46e5;
+}
