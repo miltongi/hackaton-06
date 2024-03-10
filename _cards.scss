@@ -93,3 +93,12 @@ progress::-webkit-progress-value{
 }
 
 
+@media (max-width: 360px){
+    .Grids-Container{
+        display: grid;
+        grid-template-columns:(1fr);
+        grid-template-rows:repeat(2, 1fr);
+        grid-gap: 8px;
+        margin: 24px 0;
+    }
+}

@@ -3,13 +3,38 @@
 .Navegacion {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 34px 0;
 }
 
 .Navegacion-Imagen2 {
   padding-left: 24px;
 }
 
+.Navegacion-Logo {
+  width: 93px;
+  height: 32px;
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .Navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  .Navegacion-Logo {
+    width: 120px;
+    height: 32px;
+    display: block;
+  }
+  .Navegacion-Imagen1 {
+    display: none;
+  }
+  .Navegacion-Imagen2 {
+    padding-left: 24px;
+    display: none;
+  }
+}
 .Encabezado {
   border-top: 1px solid #121212;
 }
@@ -118,6 +143,13 @@
   align-items: center;
 }
 
+@media (max-width: 360px) {
+  .Engloba {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
 .Grids-Container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -212,6 +244,15 @@ progress::-webkit-progress-value {
   border-radius: 12px;
 }
 
+@media (max-width: 360px) {
+  .Grids-Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 8px;
+    margin: 24px 0;
+  }
+}
 .Button {
   height: 124px;
   display: flex;
@@ -220,24 +261,50 @@ progress::-webkit-progress-value {
   align-items: center;
   border: 1px solid #E2EBF0;
   border-radius: 6px;
-  padding: 23px 274px 23px 27px;
+  background-color: #F7F8FD;
+  /*padding: 23px 274px 23px 27px;*/
 }
 
 .Button img {
-  margin-top: 23px;
+  /*margin-top: 23px;*/
   width: 40px;
   height: 40px;
 }
 
 .Button p {
-  margin-bottom: 23px;
-  margin-top: 14px;
+  /* margin-bottom: 23px;
+   margin-top: 14px;*/
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
   color: #4f46e5;
 }
 
+@media (max-width: 360px) {
+  .Button {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4F46E5;
+    border-radius: 6px;
+    background-color: #F7F8FD;
+  }
+  .Button img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+  }
+  .Button p {
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #4f46e5;
+    padding-left: 12px;
+  }
+}
 *,
 *::before,
 *::after {
